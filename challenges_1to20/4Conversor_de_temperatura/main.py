@@ -1,6 +1,7 @@
 # Conversor de Temperatura: Crie um conversor de temperatura que converta entre Celsius, Fahrenheit e Kelvin.
 from temperature_converter import TemperatureConverter
 
+
 def main():
     print("Bem-vindo ao Conversor de Temperatura!")
 
@@ -26,6 +27,7 @@ def main():
             print("Por favor, insira um valor numérico para a temperatura.")
         except KeyError:
             print("Escala não suportada. Por favor, use 'C', 'F' ou 'K'.")
+
 
 if __name__ == "__main__":
     main()
