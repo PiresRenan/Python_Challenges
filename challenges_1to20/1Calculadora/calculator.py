@@ -1,0 +1,23 @@
+#Calculadora Simples: Crie uma calculadora simples capaz de realizar operações básicas como adição,
+# subtração, multiplicação e divisão.
+class Calculator:
+    def __init__(self):
+        pass
+
+    @staticmethod
+    def add(x, y):
+        return x + y
+
+    @staticmethod
+    def subtract(x, y):
+        return x - y
+
+    @staticmethod
+    def multiply(x, y):
+        return x * y
+
+    @staticmethod
+    def divide(x, y):
+        if y == 0:
+            raise ValueError("Cannot divide by zero")
+        return x / y
