@@ -1,4 +1,5 @@
-# To-Do List: Construa um aplicativo de lista de tarefas simples utilizando Programação Orientada a Objetos (OOP) para representar as tarefas.
+# To-Do List: Construa um aplicativo de lista de tarefas simples utilizando Programação Orientada a Objetos (OOP)
+# para representar as tarefas.
 from to_do_list import TodoList
 
 
