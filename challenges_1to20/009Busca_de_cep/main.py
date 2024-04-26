@@ -1,6 +1,7 @@
 # Busca de CEP: Crie um programa que permita ao usuário buscar informações de um CEP específico.
 from cep_search import CEPSearch
 
+
 def main():
     cep_search = CEPSearch()
 
@@ -25,6 +26,7 @@ def main():
             print(f"Estado: {result['uf']}")
         else:
             print("Nenhuma informação encontrada para este CEP.")
+
 
 if __name__ == "__main__":
     main()
