@@ -1,5 +1,3 @@
-#Calculadora Simples: Crie uma calculadora simples capaz de realizar operações básicas como adição,
-# subtração, multiplicação e divisão.
 class Calculator:
     def __init__(self):
         pass

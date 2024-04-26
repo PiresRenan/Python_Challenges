@@ -1,3 +1,4 @@
+#Calculadora Simples: Crie uma calculadora simples capaz de realizar operações básicas como adição, subtração, multiplicação e divisão.
 from calculator import Calculator
 
 
