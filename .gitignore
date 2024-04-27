@@ -1,0 +1,34 @@
+# Arquivos gerados pelo Python
+*.pyc
+__pycache__/
+
+# Ambientes virtuais
+venv/
+env/
+*.env
+
+# Arquivos de log e cache
+*.log
+*.cache
+
+# Arquivos de build
+build/
+dist/
+*.egg-info/
+
+# Arquivos de configuração local
+*.ini
+*.cfg
+*.yaml
+
+# Arquivos de dados
+*.csv
+*.xls
+*.xlsx
+*.db
+
+# Arquivos de IDE e editor
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
