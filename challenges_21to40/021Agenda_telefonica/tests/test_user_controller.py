@@ -11,19 +11,13 @@ class TestUserController(unittest.TestCase):
         username = "testuser"
         password = "testpassword"
         self.user_controller = UserController(db)
-        self.test_create_users_table()
+        self.user_controller.create_users_table()
         try:
             self.user_controller.create_user(username, password)
         except Exception as e:
             raise Exception(e)
 
     def tearDown(self):
-        self.test_drop_users_table()
-
-    def test_create_users_table(self):
-        self.user_controller.create_users_table()
-
-    def test_drop_users_table(self):
         self.user_controller.drop_table()
 
     def test_create_user(self):
