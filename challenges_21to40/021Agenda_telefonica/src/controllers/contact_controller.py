@@ -50,7 +50,7 @@ class ContactController:
             cursor.execute(insert_query, (user_id, username, email, phone_number))
             self.db.connection.commit()
             new_contact_data = cursor.fetchone()
-            new_contact = Contact(*new_contact_data)
+            new_contact = Contact(new_contact_data[2], new_contact_data[3], new_contact_data[4])
             return new_contact
         except psycopg2.Error as e:
             self.db.connection.rollback()

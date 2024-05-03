@@ -1,4 +1,6 @@
+import os
 import unittest
+from dotenv import load_dotenv
 
 from database import Database
 from src.models.user import User
@@ -6,10 +8,15 @@ from src.models.contact import Contact
 from src.controllers.user_controller import UserController
 from src.controllers.contact_controller import ContactController
 
+load_dotenv()
+
 
 class MyTestCase(unittest.TestCase):
     def setUp(self):
-        db = Database("", "", "")
+        dbname = os.getenv("DB_NAME")
+        userdb = os.getenv("DB_USER")
+        password = os.getenv("DB_PASSWORD")
+        db = Database(dbname, userdb, password)
         username = "testuser"
         password = "testpassword"
         self.user = User(username, password)
@@ -33,11 +40,10 @@ class MyTestCase(unittest.TestCase):
     def test_create_new_contact(self):
         email = "maisteste@teste.com"
         phone_number = "99887755443"
-        print(self.user.username)
-        # new_contact = Contact(self.user.username, email, phone_number)
-        # self.assertIsInstance(new_contact, User)
-        # self.assertEqual(new_contact.username, email)
-        # self.assertEqual(new_contact.password, phone_number)
+        new_contact = Contact(self.user.username, email, phone_number)
+        created_contact = self.contact_controller.create_contact("1", new_contact.username, new_contact.email, new_contact.phone_number)
+        self.assertEqual(created_contact.email, email)
+        self.assertEqual(created_contact.phone_number, phone_number)
 
 
 if __name__ == '__main__':
