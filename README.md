@@ -16,7 +16,6 @@ Além disso, valorizo fortemente os princípios de Clean Code, Design Patterns e
 Este projeto oferece uma variedade de desafios que abrangem desde problemas básicos até problemas complexos em IA/ML. Encorajo-me a explorar, experimentar e aprender enquanto enfrento cada desafio. Estou aqui para me ajudar em minha jornada de aprendizado e crescimento como desenvolvedor.
 
 ## Desafios Básicos (Nível 1-20)
-Os desafios a seguir são destinados ao treino e fixação de conhecimentos da linguagem Python, seus frameworks e bibliotecas. Eles estão organizados em uma progressão de dificuldade crescente, adequada para iniciantes em programação.
 
 1. **Calculadora Simples:** Crie uma calculadora simples capaz de realizar operações básicas como adição, subtração, multiplicação e divisão.
 2. **Contador de Palavras:** Escreva um programa que conte o número de palavras em um texto inserido pelo usuário.
@@ -40,8 +39,7 @@ Os desafios a seguir são destinados ao treino e fixação de conhecimentos da l
 20. **Analisador de Texto:** Construa um programa que analise um texto e retorne o número de palavras, frases e parágrafos.
 
 
-## Desafios Intermediários (Nível 21-60)
-Os desafios a seguir são destinados ao aprimoramento de habilidades em Python, abrangendo conceitos mais avançados e aplicativos práticos. Eles estão organizados em uma progressão de dificuldade crescente.
+## Desafios Intermediários (Nível 21-40)
 
 21. **Agenda Telefônica:** Crie uma agenda telefônica que permita adicionar, editar, excluir e buscar contatos.
 22. **Jogo da Velha:** Implemente o jogo da velha em que dois jogadores competem para formar uma linha com suas peças.
@@ -64,9 +62,30 @@ Os desafios a seguir são destinados ao aprimoramento de habilidades em Python, 
 39. **Conversor de Vídeo para GIF:** Desenvolva um programa que converta vídeos em arquivos GIF animados.
 40. **Rastreador de Preços Online:** Crie um rastreador que monitore os preços de produtos online e notifique o usuário quando houver alterações.
 
-## Desafios Avançados+ (Nível 61-100)
-Os desafios a seguir são destinados a usuários avançados em Python, abordando problemas complexos e aplicativos de alto nível. Eles exigem um conhecimento sólido em programação e podem ser aplicados em projetos reais.
+## Desafios Avançados (Nível 41-60)
 
+41. **Sistema de Gerenciamento de Projetos:** Implemente um sistema que ajude equipes a gerenciar projetos, atribuir tarefas e monitorar o progresso.
+42. **Classificador de Texto:** Desenvolva um classificador de texto que categorize automaticamente textos em diferentes categorias.
+43. **Tradutor Automático:** Escreva um programa que traduza automaticamente textos de um idioma para outro usando APIs de tradução.
+44. **Sistema de Recomendação de Filmes:** Construa um sistema de recomendação de filmes que sugira filmes com base nos gostos do usuário.
+45. **Plataforma de Blog:** Crie uma plataforma de blog completa com recursos como criação de postagens, comentários e gerenciamento de usuários.
+46. **Reconhecimento de Padrões em Imagens:** Desenvolva um programa que reconheça padrões específicos em imagens fornecidas pelo usuário.
+47. **Sistema de Reservas de Hotel:** Implemente um sistema que permita aos usuários reservar quartos de hotel, visualizar disponibilidade e pagar online.
+48. **Simulador de Tráfego:** Construa um simulador de tráfego que modele o fluxo de veículos em uma rede viária.
+49. **Sistema de Gerenciamento de Inventário:** Crie um sistema que acompanhe o inventário de uma loja, registre vendas e gerencie fornecedores.
+50. **Plataforma de E-commerce:** Desenvolva uma plataforma de e-commerce completa com funcionalidades de compra, carrinho de compras e pagamento.
+51. **Sistema de Gerenciamento de Biblioteca:** Escreva um sistema que ajude a gerenciar uma biblioteca, incluindo empréstimos, devoluções e catalogação de livros.
+52. **Rede Social:** Construa uma rede social com perfis de usuários, postagens, comentários e recursos de interação.
+53. **Sistema de Monitoramento de Saúde:** Implemente um sistema que monitore dados de saúde como frequência cardíaca, passos dados e calorias queimadas.
+54. **Assistente Virtual:** Crie um assistente virtual que possa responder a perguntas, executar tarefas e interagir com o usuário por voz.
+55. **Sistema de Gestão de Eventos:** Desenvolva um sistema que facilite a organização e gestão de eventos como conferências, festivais e workshops.
+56. **Plataforma de Aprendizado Online:** Escreva uma plataforma de aprendizado online que ofereça cursos, vídeos, quizzes e recursos de interação.
+57. **Sistema de Monitoramento Ambiental:** Construa um sistema que monitore dados ambientais como qualidade do ar, temperatura e umidade.
+58. **Sistema de Gestão de RH:** Implemente um sistema que auxilie na gestão de recursos humanos, incluindo folha de pagamento, registro de funcionários e avaliações.
+59. **Sistema de Recrutamento:** Crie um sistema que facilite o processo de recrutamento, desde a publicação de vagas até a seleção de candidatos.
+60. **Plataforma de Streaming de Música:** Desenvolva uma plataforma de streaming de música que permita aos usuários ouvir, criar playlists e descobrir novas músicas.
+
+## Desafios Avançados+ (Nível 61-100)
 61. **Sistema de Gestão de Escolas:** Implemente um sistema que auxilie na administração de uma escola, incluindo registros de alunos, notas e horários.
 62. **Plataforma de Jogos Online:** Desenvolva uma plataforma de jogos online que ofereça uma variedade de jogos multiplayer e funcionalidades sociais.
 63. **Sistema de Monitoramento de Redes Sociais:** Construa um sistema que monitore e analise atividades em diferentes redes sociais, como Twitter, Facebook e Instagram.
