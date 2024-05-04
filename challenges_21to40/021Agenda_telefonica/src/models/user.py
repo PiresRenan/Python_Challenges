@@ -10,5 +10,5 @@ class User:
         self.username = username
         self.password = password
 
-    def __str__(self):
+    def __repr__(self):
         return f'Username: {self.username}'

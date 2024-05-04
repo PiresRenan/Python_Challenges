@@ -50,7 +50,7 @@ class ContactController:
             cursor.execute(insert_query, (user_id, username, email, phone_number))
             self.db.connection.commit()
             new_contact_data = cursor.fetchone()
-            new_contact = Contact(new_contact_data[2], new_contact_data[3], new_contact_data[4])
+            new_contact = Contact(new_contact_data[0], new_contact_data[2], new_contact_data[3], new_contact_data[4])
             return new_contact
         except psycopg2.Error as e:
             self.db.connection.rollback()
@@ -62,8 +62,38 @@ class ContactController:
             select_query = "SELECT * FROM contacts WHERE user_id = %s"
             cursor.execute(select_query, (user_id,))
             self.db.connection.commit()
-            contacts = cursor.fetchall()
+            contacts = []
+            rows = cursor.fetchall()
+            for row in rows:
+                contact = Contact(row[0], row[2], row[3], row[4])
+                contacts.append(contact)
             return contacts
+        except psycopg2.Error as e:
+            self.db.connection.rollback()
+            raise e
+
+    def find_contact_by_email(self, user_id, email):
+        contacts = self.find_all_contacts(user_id)
+        founded_contacts = []
+        for contact in contacts:
+            if contact.email == email:
+                founded_contacts.append(contact)
+        return founded_contacts
+
+    def update_contact(self, user_id, contact_id, new_email=None, new_phone_number=None):
+        try:
+            cursor = self.db.connection.cursor()
+            if new_email:
+                update_query = "UPDATE contacts SET email = %s WHERE user_id = %s AND id = %s"
+                cursor.execute(update_query, (new_email, user_id, contact_id))
+
+            if new_phone_number:
+                update_query = "UPDATE contacts SET phone_number = %s WHERE user_id = %s AND id = %s"
+                cursor.execute(update_query, (new_phone_number, user_id, contact_id))
+
+            self.db.connection.commit()
+            cursor.close()
+            return True
         except psycopg2.Error as e:
             self.db.connection.rollback()
             raise e
