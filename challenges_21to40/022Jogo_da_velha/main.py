@@ -1,20 +1,15 @@
 import sys
 
 from core.game import Game
-from gui.board import Board
+from gui.main_window import MainWindow
 
 from PyQt5.QtWidgets import QApplication
 
 
 def main():
     app = QApplication(sys.argv)
-
-    game = Game()
-
-    board = Board(game)
-
+    board = MainWindow()
     board.show()
-
     sys.exit(app.exec_())
 
 
