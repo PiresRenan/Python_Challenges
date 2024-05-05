@@ -56,10 +56,9 @@ class ChartBuilder:
         Constrói um histograma.
         """
         plt.figure(figsize=(8, 6))
-        plt.hist(self.processed_data['values'], bins=10)
-        plt.title('Histograma')
-        plt.xlabel('Values')
+        plt.hist(self.processed_data['child_IQ_score'], bins=10, color='skyblue', edgecolor='black')
+        plt.title('Histograma de Pontuação de QI')
+        plt.xlabel('Pontuação de QI')
         plt.ylabel('Frequência')
-        plt.xticks(rotation=45)
-        plt.tight_layout()
+        plt.grid(True)
         plt.show()

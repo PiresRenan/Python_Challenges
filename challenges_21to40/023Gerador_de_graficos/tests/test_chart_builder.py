@@ -1,6 +1,5 @@
 import unittest
 
-from visualization import chart_builder
 from visualization.chart_builder import ChartBuilder
 
 
@@ -17,6 +16,9 @@ class TestChartBuilder(unittest.TestCase):
 
     def test_build_line_chart(self):
         self.chart_builder.build_line_chart()
+
+    def test_build_histogram(self):
+        self.chart_builder.build_histogram()
 
 
 if __name__ == '__main__':
