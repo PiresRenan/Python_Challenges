@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Produtos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="mb-4 text-center">Lista de Produtos</h1>
+        <ul class="container text-center mb-4 border border-primary rounded">
+            <div class="row border-bottom border-success text-center">
+                <div class="col border-right border-secundary"><p>ID</p></div>
+                <div class="col border-right border-secundary"><p>PRODUTO</p></div>
+                <div class="col border-right border-secundary"><p>QTD</p></div>
+                <div class="col border-right border-secundary"><p>EDIT</p></div>
+                <div class="col"><p>DEL</p></div>
+            </div>
+            {% for produto in produtos %}
+            <div class="row border-bottom border-secundary">
+                <div class="col">
+                    <p>{{ produto.id }}</p>
+                </div>
+                <div class="col">
+                    <p>{{ produto.nome }}</p>
+                </div>
+                <div class="col">
+                    <p>{{ produto.quantidade }}</p>
+                </div>
+                <div class="col">
+                    <a class="btn mr-2 text-center" href="{% url 'ajustar_estoque' produto.id %}">%</a>
+                </div>
+                <div class="col">
+                    <a class="btn mr-2 text-center" href="{% url 'deletar_produto' produto.id %}">-</a>
+                </div>
+            </div>
+            {% endfor %}
+        </ul>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <a href="{% url 'adicionar_produto' %}" class="btn btn-primary mr-2">Adicionar Produto</a>
+                </div>
+                <div class="col">
+                    <a href="{% url 'historico_estoque' %}" class="btn btn-secondary">Histórico de Estoque</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

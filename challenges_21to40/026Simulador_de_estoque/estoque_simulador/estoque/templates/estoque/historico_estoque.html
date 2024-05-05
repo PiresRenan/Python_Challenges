@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Estoque</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">Histórico de Estoque</h1>
+        <ul class="list-group mt-3">
+            {% for movimento in movimentos %}
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-md-4 text-center">{{ movimento.data_movimento }}</div>
+                    <div class="col-md-4 text-center">prod: {{ movimento.produto.nome }} | qtd: {{ movimento.quantidade }} | mov: {{ movimento.get_tipo_movimento_display }}</div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="text-center mt-3">
+            <a href="{% url 'lista_produtos' %}" class="btn btn-primary mr-2">Voltar para Lista de Produtos</a>
+            <a href="{% url 'adicionar_produto' %}" class="btn btn-secondary">Adicionar Produto</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
