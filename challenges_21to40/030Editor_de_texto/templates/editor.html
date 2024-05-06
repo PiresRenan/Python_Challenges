@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Texto</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+<script type="text/javascript" src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</head>
+<body>
+    <h1>Editor de Texto</h1>
+    <form action="/save" method="POST">
+        <label for="filename">Nome do arquivo:</label>
+        <input type="text" id="filename" name="filename" value="{{ filename }}">
+        <br>
+        <label>
+            <textarea name="content" rows="10" cols="50">{{ content }}</textarea>
+        </label>
+        <br>
+        <button type="submit">Salvar</button>
+    </form>
+    <form action="/load" method="POST">
+        <label for="filename_load">Carregar arquivo:</label>
+        <input type="text" id="filename_load" name="filename" placeholder="Nome do arquivo">
+        <button type="submit">Carregar</button>
+    </form>
+</body>
+</html>
