@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiência Profissional</title>
+</head>
+<body>
+    <h1>Experiência Profissional</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.job_title.label }} {{ form.job_title() }}
+        {{ form.company.label }} {{ form.company() }}
+        <!-- Adicione outros campos para experiência profissional -->
+        {{ form.submit() }}
+    </form>
+</body>
+</html>

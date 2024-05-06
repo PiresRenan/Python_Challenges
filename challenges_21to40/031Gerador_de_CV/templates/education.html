@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação</title>
+</head>
+<body>
+    <h1>Educação</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.degree.label }} {{ form.degree() }}
+        {{ form.institution.label }} {{ form.institution() }}
+        <!-- Adicione outros campos para educação -->
+        {{ form.submit() }}
+    </form>
+</body>
+</html>
