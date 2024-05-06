@@ -1,5 +1,5 @@
 class Documentacao:
-    def __init__(self, dados_codigo_fonte: dict):
+    def __init__(self, dados_codigo_fonte: list) -> None:
         """
          Inicializa um objeto Documentacao com os dados do código-fonte.
         :param dados_codigo_fonte: Dados do código-fonte obtidos pela classe CodigoFonte.
@@ -11,5 +11,8 @@ class Documentacao:
         Gera a documentação a partir dos dados do código-fonte.
         :return: A documentação gerada.
         """
-        # Implemente a lógica para gerar a documentação
-        return ""
+        documentacao = ""
+        for class_name, method_name in self.dados_codigo_fonte:
+            documentacao += f"Classe: {class_name}\n"
+            documentacao += f"Método: {method_name}\n\n"
+        return documentacao
