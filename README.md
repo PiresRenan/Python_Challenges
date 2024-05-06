@@ -39,7 +39,7 @@ Este projeto oferece uma variedade de desafios que abrangem desde problemas bás
 20. **Analisador de Texto:** Construa um programa que analise um texto e retorne o número de palavras, frases e parágrafos.
 
 
-## Desafios Intermediários (Nível 21-40)
+## Desafios Básicos + (Nível 21-40)
 
 21. **Agenda Telefônica:** Crie uma agenda telefônica que permita adicionar, editar, excluir e buscar contatos.
 22. **Jogo da Velha:** Implemente o jogo da velha em que dois jogadores competem para formar uma linha com suas peças.
@@ -62,7 +62,7 @@ Este projeto oferece uma variedade de desafios que abrangem desde problemas bás
 39. **Conversor de Vídeo para GIF:** Desenvolva um programa que converta vídeos em arquivos GIF animados.
 40. **Rastreador de Preços Online:** Crie um rastreador que monitore os preços de produtos online e notifique o usuário quando houver alterações.
 
-## Desafios Avançados (Nível 41-60)
+## Desafios Intermediários (Nível 41-60)
 
 41. **Sistema de Gerenciamento de Projetos:** Implemente um sistema que ajude equipes a gerenciar projetos, atribuir tarefas e monitorar o progresso.
 42. **Classificador de Texto:** Desenvolva um classificador de texto que categorize automaticamente textos em diferentes categorias.
@@ -85,7 +85,7 @@ Este projeto oferece uma variedade de desafios que abrangem desde problemas bás
 59. **Sistema de Recrutamento:** Crie um sistema que facilite o processo de recrutamento, desde a publicação de vagas até a seleção de candidatos.
 60. **Plataforma de Streaming de Música:** Desenvolva uma plataforma de streaming de música que permita aos usuários ouvir, criar playlists e descobrir novas músicas.
 
-## Desafios Avançados+ (Nível 61-100)
+## Desafios Avançados (Nível 61-80)
 61. **Sistema de Gestão de Escolas:** Implemente um sistema que auxilie na administração de uma escola, incluindo registros de alunos, notas e horários.
 62. **Plataforma de Jogos Online:** Desenvolva uma plataforma de jogos online que ofereça uma variedade de jogos multiplayer e funcionalidades sociais.
 63. **Sistema de Monitoramento de Redes Sociais:** Construa um sistema que monitore e analise atividades em diferentes redes sociais, como Twitter, Facebook e Instagram.
@@ -106,6 +106,8 @@ Este projeto oferece uma variedade de desafios que abrangem desde problemas bás
 78. **Sistema de Reconhecimento Facial:** Desenvolva um sistema que reconheça rostos em imagens e vídeos, identificando pessoas com base em suas características faciais.
 79. **Plataforma de Compartilhamento de Arquivos Seguro:** Construa uma plataforma que permita aos usuários compartilhar arquivos de forma segura e controlada.
 80. **Sistema de Análise de Dados Geoespaciais:** Crie um sistema que analise e visualize dados geoespaciais, como mapas de calor e rotas de tráfego.
+
+## Desafios Avançados + (Nível 81-100)
 81. **Plataforma de Análise de Mercado Financeiro:** Implemente uma plataforma que forneça análises e insights sobre o mercado financeiro, incluindo ações, criptomoedas e commodities.
 82. **Sistema de Recomendação de Livros:** Desenvolva um sistema que recomende livros aos usuários com base em seus interesses e preferências de leitura.
 83. **Plataforma de Planejamento de Viagens:** Construa uma plataforma que ajude os usuários a planejar viagens, fornecendo informações sobre destinos, atividades e hospedagem.
@@ -126,7 +128,6 @@ Este projeto oferece uma variedade de desafios que abrangem desde problemas bás
 99. **Sistema de Detecção de Plágio:** Desenvolva um sistema que identifique e avalie a originalidade de textos com base em algoritmos de detecção de plágio.
 100. **Plataforma de Gestão de Projetos de Software:** Construa uma plataforma que facilite o desenvolvimento e o gerenciamento de projetos de software, incluindo controle de versões, rastreamento de problemas e colaboração de equipe.
 101. **Sistema de Monitoramento de Desastres Naturais:** Crie um sistema que monitore e alerte sobre desastres naturais, como terremotos, furacões e incêndios florestais, fornecendo informações em tempo real e medidas de segurança.
-
 
 ## Desafios de Bônus em IA e Aprendizado de Máquina
 Os desafios a seguir são voltados para aqueles interessados em explorar conceitos avançados de Inteligência Artificial (IA) e Aprendizado de Máquina (ML). Eles abrangem diversas técnicas e aplicações em IA e ML, oferecendo oportunidades para aprimorar habilidades em projetos práticos.
