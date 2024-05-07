@@ -19,5 +19,6 @@ class TestShippingCalculator(unittest.TestCase):
 
     # Aqui você pode adicionar mais testes para diferentes cenários de cálculo de frete
 
+
 if __name__ == '__main__':
     unittest.main()
